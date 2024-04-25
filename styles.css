@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #31708e;
+  color: beige;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px;
+}
+
+.hero img {
+  width: 35%;
+}
+
+.btn {
+  background-color: #687864;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Animation for the tiger image */
+#hero-tiger {
+  animation: move 5s ease-in-out infinite;
+}
+
+
+@keyframes move {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(100%); }
+}
+
+/* Other styles for different sections and elements */
+header {
+  background-color: #687864;
+  padding: 20px;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+section {
+  padding: 20px;
+}
+
+.threat-container {
+  display: flex; /* Make threat containers arrange elements side-by-side */
+  margin-bottom: 20px; /* Add space between threat sections */
+}
+
+.threat-image {
+  width: 35%; /* Set a fixed width for all threat images */
+  margin-right: 20px; /* Add space between image and list */
+}
+
+.threat-list {
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+#about img {
+  width: 35%;
+  margin-bottom: 20px;
+  display: block;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #8fc1e3;
+}
+
+#donate form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 50%;
+}
+
+#donate form label {
+  margin-bottom: 5px;
+}

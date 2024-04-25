@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Save the Stripes: Tiger Conservation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Save the Stripes: Protecting India's Tigers</h1>
+    <nav>
+      <ul>
+        <li><a href="#" style="text-decoration:none; color:white;">Home</a></li>
+        <li><a href="#about" style="text-decoration:none; color: white;">About Tigers</a></li>
+        <li><a href="threats.html" style="text-decoration:none; color: white;">Threats to Tigers</a></li>
+        <li><a href="veterinarian.html" style="text-decoration:none; color: white;">Veterinarian Care</a></li> <li><a href="infected-tigers.html" style="text-decoration:none; color: white;">Infected Tigers</a></li>
+        <li><a href="donate.html" style="text-decoration:none; color: white;">Donate</a></li>
+        <li><a href="reserves.html" style="text-decoration:none; color: white;">Tiger Reserves</a></li>
+        <li><a href="tamil.html" style="text-decoration:none; color: white;">Home (தமிழ்)</a></li>
+        <li><a href="hindi.html" style="text-decoration:none; color: white;">Home (हिंदी)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <audio id="tiger-roar" preload="auto">
+        <source src="sounds/tigersound.mp3" type="audio/mpeg">
+      </audio>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var audio = document.getElementById("tiger-roar");
+          audio.play();
+          setTimeout(function() {
+            audio.pause();
+          }, 2000); // Play for 2 seconds
+        });
+      </script>
+      <img id="hero-tiger" src="images/babytiger.jpg" alt="Tiger in the wild">
+      <p>The majestic tiger, India's national animal, faces a real threat of extinction. Help us protect these magnificent creatures and their habitat.</p>
+      <a href="donate.html" class="btn">Donate Now</a>
+    </section>
+
+    <section id="about">
+      <h2>About Tigers</h2>
+      <p>Tigers are the largest wild cats in the world, known for their orange and black stripes. They play a vital role in maintaining healthy ecosystems.</p>
+      <img src="images/tigeranatomy.jpg" alt="Tiger anatomy" usemap="#tiger-map" style="">
+      <map name="tiger-map">
+        <area shape="rect" coords="10,10,80,40" href="#" alt="Head">
+        <area shape="circle" coords="150,70,20" href="#" alt="Eye">
+      </map>
+      <p><b>Threats like habitat loss and poaching endanger their survival.</b></p>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
